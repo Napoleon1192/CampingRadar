@@ -2,6 +2,8 @@
 // DONNÉES TARIFAIRES — Camping Radar
 // Prix par NUIT pour un mobil-home cœur de gamme (2-3ch)
 // Structure: tableaux de tranches de dates avec prix min/max
+// Mise à jour: mars 2026 — tarifs vérifiés sur sites officiels
+// Sources: campings.online, campings.com, sites directs
 // ===================================================
 
 // Utilitaire : convertit "YYYY-MM-DD" en timestamp
@@ -30,11 +32,12 @@ const CAMPINGS = [
     is_target: true,
     tarifs: [
       { from: "2026-01-01", to: "2026-04-01", min: 0,   max: 0,   semaine: 0    },
-      { from: "2026-04-02", to: "2026-04-30", min: 55 , max: 80 , semaine: 385  },
-      { from: "2026-05-01", to: "2026-06-30", min: 60 , max: 95 , semaine: 420  },
-      { from: "2026-07-01", to: "2026-07-31", min: 100, max: 175, semaine: 700  },
-      { from: "2026-08-01", to: "2026-08-31", min: 120, max: 244, semaine: 840  },
-      { from: "2026-09-01", to: "2026-09-25", min: 55 , max: 95 , semaine: 385  },
+      { from: "2026-04-02", to: "2026-04-11", min: 49 , max: 61 , semaine: 343  },
+      { from: "2026-04-12", to: "2026-04-30", min: 55 , max: 98 , semaine: 385  },
+      { from: "2026-05-01", to: "2026-06-30", min: 62 , max: 100, semaine: 434  },
+      { from: "2026-07-01", to: "2026-07-31", min: 77 , max: 188, semaine: 539  },
+      { from: "2026-08-01", to: "2026-08-31", min: 88 , max: 235, semaine: 616  },
+      { from: "2026-09-01", to: "2026-09-25", min: 55 , max: 93 , semaine: 385  },
       { from: "2026-09-26", to: "2026-12-31", min: 0,   max: 0,   semaine: 0    }
     ]
   },
@@ -56,11 +59,11 @@ const CAMPINGS = [
     is_target: false,
     tarifs: [
       { from: "2026-01-01", to: "2026-04-02", min: 0,   max: 0,   semaine: 0    },
-      { from: "2026-04-03", to: "2026-04-30", min: 50 , max: 70 , semaine: 350  },
-      { from: "2026-05-01", to: "2026-06-30", min: 60 , max: 90 , semaine: 420  },
-      { from: "2026-07-01", to: "2026-07-31", min: 139, max: 200, semaine: 976  },
-      { from: "2026-08-01", to: "2026-08-31", min: 187, max: 280, semaine: 1312  },
-      { from: "2026-09-01", to: "2026-10-31", min: 49 , max: 75 , semaine: 343  },
+      { from: "2026-04-03", to: "2026-04-30", min: 49 , max: 93 , semaine: 343  },
+      { from: "2026-05-01", to: "2026-06-30", min: 52 , max: 107, semaine: 364  },
+      { from: "2026-07-01", to: "2026-07-31", min: 115, max: 209, semaine: 805  },
+      { from: "2026-08-01", to: "2026-08-31", min: 150, max: 245, semaine: 1050  },
+      { from: "2026-09-01", to: "2026-10-31", min: 49 , max: 68 , semaine: 343  },
       { from: "2026-11-01", to: "2026-12-31", min: 0,   max: 0,   semaine: 0    }
     ]
   },
@@ -82,11 +85,15 @@ const CAMPINGS = [
     is_target: false,
     tarifs: [
       { from: "2026-01-01", to: "2026-04-02", min: 0,   max: 0,   semaine: 0    },
-      { from: "2026-04-03", to: "2026-04-30", min: 67 , max: 95 , semaine: 467  },
-      { from: "2026-05-01", to: "2026-06-30", min: 75 , max: 110, semaine: 523  },
-      { from: "2026-07-01", to: "2026-07-31", min: 130, max: 200, semaine: 910  },
-      { from: "2026-08-01", to: "2026-08-31", min: 150, max: 230, semaine: 1050  },
-      { from: "2026-09-01", to: "2026-09-27", min: 70 , max: 100, semaine: 490  },
+      { from: "2026-04-03", to: "2026-04-30", min: 56 , max: 104, semaine: 395  },
+      { from: "2026-05-01", to: "2026-05-12", min: 42 , max: 84 , semaine: 295  },
+      { from: "2026-05-13", to: "2026-05-17", min: 124, max: 235, semaine: 868  },
+      { from: "2026-05-18", to: "2026-05-21", min: 42 , max: 84 , semaine: 295  },
+      { from: "2026-05-22", to: "2026-05-25", min: 98 , max: 195, semaine: 686  },
+      { from: "2026-05-26", to: "2026-06-30", min: 57 , max: 126, semaine: 402  },
+      { from: "2026-07-01", to: "2026-07-31", min: 119, max: 260, semaine: 836  },
+      { from: "2026-08-01", to: "2026-08-31", min: 224, max: 336, semaine: 1568 },
+      { from: "2026-09-01", to: "2026-09-27", min: 65 , max: 157, semaine: 456  },
       { from: "2026-09-28", to: "2026-12-31", min: 0,   max: 0,   semaine: 0    }
     ]
   },
@@ -108,11 +115,11 @@ const CAMPINGS = [
     is_target: false,
     tarifs: [
       { from: "2026-01-01", to: "2026-04-02", min: 0,   max: 0,   semaine: 0    },
-      { from: "2026-04-03", to: "2026-04-30", min: 55 , max: 85 , semaine: 385  },
-      { from: "2026-05-01", to: "2026-06-30", min: 45 , max: 90 , semaine: 315  },
-      { from: "2026-07-01", to: "2026-07-31", min: 120, max: 185, semaine: 840  },
-      { from: "2026-08-01", to: "2026-08-31", min: 140, max: 215, semaine: 980  },
-      { from: "2026-09-01", to: "2026-10-04", min: 50 , max: 90 , semaine: 350  },
+      { from: "2026-04-03", to: "2026-04-30", min: 45 , max: 80 , semaine: 315  },
+      { from: "2026-05-01", to: "2026-06-30", min: 45 , max: 95 , semaine: 315  },
+      { from: "2026-07-01", to: "2026-07-31", min: 110, max: 190, semaine: 770  },
+      { from: "2026-08-01", to: "2026-08-31", min: 130, max: 220, semaine: 910  },
+      { from: "2026-09-01", to: "2026-10-04", min: 45 , max: 85 , semaine: 315  },
       { from: "2026-10-05", to: "2026-12-31", min: 0,   max: 0,   semaine: 0    }
     ]
   },
@@ -135,13 +142,13 @@ const CAMPINGS = [
     tarifs: [
       { from: "2026-01-01", to: "2026-04-02", min: 0,   max: 0,   semaine: 0    },
       { from: "2026-04-03", to: "2026-05-01", min: 64 , max: 119, semaine: 448  },
-      { from: "2026-05-02", to: "2026-05-29", min: 65 , max: 116, semaine: 455  },
-      { from: "2026-05-30", to: "2026-06-12", min: 84 , max: 142, semaine: 588  },
-      { from: "2026-06-13", to: "2026-07-03", min: 70 , max: 125, semaine: 490  },
-      { from: "2026-07-04", to: "2026-07-17", min: 100, max: 213, semaine: 700  },
-      { from: "2026-07-18", to: "2026-08-14", min: 104, max: 215, semaine: 728  },
-      { from: "2026-08-15", to: "2026-08-28", min: 100, max: 213, semaine: 700  },
-      { from: "2026-08-29", to: "2026-09-27", min: 64 , max: 115, semaine: 448  },
+      { from: "2026-05-02", to: "2026-05-29", min: 64 , max: 130, semaine: 450  },
+      { from: "2026-05-30", to: "2026-06-12", min: 84 , max: 145, semaine: 588  },
+      { from: "2026-06-13", to: "2026-07-03", min: 70 , max: 130, semaine: 490  },
+      { from: "2026-07-04", to: "2026-07-17", min: 100, max: 215, semaine: 700  },
+      { from: "2026-07-18", to: "2026-08-14", min: 105, max: 220, semaine: 735  },
+      { from: "2026-08-15", to: "2026-08-28", min: 100, max: 215, semaine: 700  },
+      { from: "2026-08-29", to: "2026-09-27", min: 64 , max: 115, semaine: 450  },
       { from: "2026-09-28", to: "2026-12-31", min: 0,   max: 0,   semaine: 0    }
     ]
   },
@@ -346,10 +353,10 @@ const CAMPINGS = [
     is_target: false,
     tarifs: [
       { from: "2026-01-01", to: "2026-03-31", min: 0,   max: 0,   semaine: 0    },
-      { from: "2026-04-01", to: "2026-04-30", min: 57 , max: 108, semaine: 400  },
-      { from: "2026-05-01", to: "2026-06-30", min: 57 , max: 140, semaine: 438  },
-      { from: "2026-07-01", to: "2026-07-31", min: 120, max: 200, semaine: 840  },
-      { from: "2026-08-01", to: "2026-08-31", min: 140, max: 220, semaine: 980  },
+      { from: "2026-04-01", to: "2026-04-30", min: 53 , max: 100, semaine: 370  },
+      { from: "2026-05-01", to: "2026-06-30", min: 83 , max: 145, semaine: 584  },
+      { from: "2026-07-01", to: "2026-07-31", min: 125, max: 210, semaine: 875  },
+      { from: "2026-08-01", to: "2026-08-31", min: 145, max: 230, semaine: 1015  },
       { from: "2026-09-01", to: "2026-10-31", min: 53 , max: 100, semaine: 370  },
       { from: "2026-11-01", to: "2026-12-31", min: 0,   max: 0,   semaine: 0    }
     ]
@@ -500,13 +507,15 @@ const CAMPINGS = [
     plateformes: ["Booking.com", "Campings.fr"],
     is_target: false,
     tarifs: [
-      { from: "2026-01-01", to: "2026-05-06", min: 0,   max: 0,   semaine: 0    },
-      { from: "2026-05-07", to: "2026-06-27", min: 52 , max: 132, semaine: 364  },
-      { from: "2026-06-28", to: "2026-07-04", min: 88 , max: 172, semaine: 616  },
-      { from: "2026-07-05", to: "2026-07-25", min: 119, max: 257, semaine: 833  },
-      { from: "2026-07-26", to: "2026-08-17", min: 157, max: 257, semaine: 1099  },
-      { from: "2026-08-18", to: "2026-08-29", min: 88 , max: 257, semaine: 616  },
-      { from: "2026-08-30", to: "2026-09-14", min: 52 , max: 124, semaine: 364  },
+      { from: "2026-01-01", to: "2026-05-12", min: 0,   max: 0,   semaine: 0    },
+      { from: "2026-05-13", to: "2026-05-31", min: 112, max: 152, semaine: 840  },
+      { from: "2026-06-01", to: "2026-06-27", min: 72 , max: 126, semaine: 503  },
+      { from: "2026-06-28", to: "2026-07-10", min: 60 , max: 140, semaine: 419  },
+      { from: "2026-07-11", to: "2026-07-31", min: 138, max: 197, semaine: 1070 },
+      { from: "2026-08-01", to: "2026-08-17", min: 181, max: 223, semaine: 1266 },
+      { from: "2026-08-18", to: "2026-08-29", min: 120, max: 175, semaine: 900  },
+      { from: "2026-08-30", to: "2026-09-07", min: 68 , max: 115, semaine: 475  },
+      { from: "2026-09-08", to: "2026-09-14", min: 57 , max: 99 , semaine: 400  },
       { from: "2026-09-15", to: "2026-12-31", min: 0,   max: 0,   semaine: 0    }
     ]
   },
@@ -528,15 +537,19 @@ const CAMPINGS = [
     plateformes: ["Direct", "CampingDirect", "Campings-Atlantique"],
     is_target: false,
     tarifs: [
-      { from: "2026-01-01", to: "2026-04-03", min: 0,   max: 0,   semaine: 0    },
-      { from: "2026-04-04", to: "2026-05-01", min: 57 , max: 85 , semaine: 399  },
+      // Source: reservation.secureholiday.net (BookingPremium) — vérifié 16/03/2026
+      // Gammes: Glénans 31m²/2ch (MIN), Maldives 32m²/2ch, Florès 35m²/3ch (MAX)
+      // Mobil-home 24m² exclu (trop entrée de gamme)
+      { from: "2026-01-01", to: "2026-04-04", min: 0,   max: 0,   semaine: 0    },
+      { from: "2026-04-05", to: "2026-05-01", min: 54 , max: 80 , semaine: 380  },  // dès 380€/sem site
       { from: "2026-05-02", to: "2026-06-12", min: 60 , max: 91 , semaine: 420  },
-      { from: "2026-06-13", to: "2026-07-03", min: 65 , max: 98 , semaine: 455  },
-      { from: "2026-07-04", to: "2026-07-17", min: 119, max: 171, semaine: 833  },
-      { from: "2026-07-18", to: "2026-08-21", min: 145, max: 206, semaine: 1015  },
-      { from: "2026-08-22", to: "2026-08-28", min: 100, max: 159, semaine: 700  },
-      { from: "2026-08-29", to: "2026-09-11", min: 67 , max: 89 , semaine: 469  },
-      { from: "2026-09-12", to: "2026-09-26", min: 57 , max: 85 , semaine: 399  },
+      { from: "2026-06-13", to: "2026-07-04", min: 65 , max: 98 , semaine: 455  },
+      { from: "2026-07-05", to: "2026-07-10", min: 119, max: 151, semaine: 833  },  // 716€/6n → 119/n; 907€/6n → 151/n
+      { from: "2026-07-11", to: "2026-08-07", min: 127, max: 173, semaine: 890  },  // 890€/7n → 127/n; 1212€/7n → 173/n
+      { from: "2026-08-08", to: "2026-08-22", min: 152, max: 208, semaine: 1065 },  // 1065€/7n → 152/n; 1457€/7n → 208/n
+      { from: "2026-08-23", to: "2026-09-04", min: 100, max: 159, semaine: 700  },
+      { from: "2026-09-05", to: "2026-09-13", min: 67 , max: 89 , semaine: 469  },
+      { from: "2026-09-14", to: "2026-09-26", min: 54 , max: 80 , semaine: 380  },
       { from: "2026-09-27", to: "2026-12-31", min: 0,   max: 0,   semaine: 0    }
     ]
   },
